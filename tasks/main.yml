@@ -1,0 +1,9 @@
+---
+
+- name: install Minimap2 via conda
+  conda_install:
+    name: "minimap2"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "minimap2_{{ env_name }}"
